@@ -1,4 +1,4 @@
-This project has an api that shows the metadata of movie directors and querying the same by id it
+This project has an api that shows the metadata of movie directors and querying the same by id. It
 shows data of respective director movies.
 
 Technologies used :
