@@ -8,11 +8,14 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 import com.google.gson.reflect.TypeToken;
+import org.mapstruct.factory.Mappers;
 import java.lang.reflect.Type;
 import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface DirectorDetailsMapper {
+
+    DirectorDetailsMapper MAPPER = Mappers.getMapper(DirectorDetailsMapper.class);
 
     @Mapping(target = "movieDets", source = ".", qualifiedByName = "movieDetails")
     DirectorDetails domainToDto(DirectorDetailsEntity entity);
@@ -23,4 +26,5 @@ public interface DirectorDetailsMapper {
         Type mockDetailsType = new TypeToken<List<MovieDetails>>() {}.getType();
         return JsonUtil.getGson().fromJson(movies, mockDetailsType);
     }
+
 }

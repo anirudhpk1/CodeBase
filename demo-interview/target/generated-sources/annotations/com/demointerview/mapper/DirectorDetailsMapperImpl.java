@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-05-02T16:03:53+0530",
-    comments = "version: 1.4.2.Final, compiler: Eclipse JDT (IDE) 3.34.0.v20230413-0857, environment: Java 17.0.7 (Eclipse Adoptium)"
+    date = "2023-05-10T12:18:23+0530",
+    comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.6 (Oracle Corporation)"
 )
 @Component
 public class DirectorDetailsMapperImpl implements DirectorDetailsMapper {
@@ -24,6 +24,7 @@ public class DirectorDetailsMapperImpl implements DirectorDetailsMapper {
 
         directorDetails.movieDets( DirectorDetailsMapper.getMovieDetails( entity ) );
         directorDetails.name( entity.getName() );
+        directorDetails.director_image( entity.getDirector_image() );
 
         return directorDetails.build();
     }
