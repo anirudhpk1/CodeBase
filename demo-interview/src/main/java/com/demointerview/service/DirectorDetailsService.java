@@ -7,7 +7,6 @@ import com.demointerview.models.DirectorDetailsEntity;
 import com.demointerview.dto.Director;
 import com.demointerview.repository.DirectorDetailsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

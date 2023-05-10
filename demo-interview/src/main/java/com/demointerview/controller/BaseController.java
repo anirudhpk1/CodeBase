@@ -3,7 +3,6 @@ package com.demointerview.controller;
 
 import com.demointerview.dto.DirectorDetails;
 import com.demointerview.dto.Director;
-import com.demointerview.models.DirectorDetailsEntity;
 import com.demointerview.service.DirectorDetailsService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;

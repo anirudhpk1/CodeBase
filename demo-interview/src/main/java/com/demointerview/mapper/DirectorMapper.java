@@ -4,7 +4,7 @@ package com.demointerview.mapper;
 import com.demointerview.models.DirectorDetailsEntity;
 import com.demointerview.dto.Director;
 import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy;
+
 
 
 import java.util.List;
