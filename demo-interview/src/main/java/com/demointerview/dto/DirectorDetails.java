@@ -18,4 +18,5 @@ public class DirectorDetails implements Serializable {
     private static final long serialVersionUID = 634961036400971080L;
     private String name;
     private List<MovieDetails> movieDets;
+    private String director_image;
 }

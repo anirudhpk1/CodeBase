@@ -18,4 +18,8 @@ public class DirectorDetailsEntity {
 
     @Column(name = "movies", nullable = false)
     private String movies;
+
+    @Column(name = "director_image", nullable = false)
+    private String director_image;
+
 }
